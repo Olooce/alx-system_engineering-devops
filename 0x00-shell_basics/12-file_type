@@ -1,0 +1,2 @@
+type=$(file -b /tmp/iamafile)
+echo " $type"
