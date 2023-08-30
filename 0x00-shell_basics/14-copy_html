@@ -1,0 +1,7 @@
+dir=$(dirname "$PWD")
+for file in *.html; do
+if [ ! -e "$dir/$file" ] || [ "$file" -nt "$dir/$file" ]; then
+        cp "$file" "$dir"
+        echo "copied  $file to $dir"
+    fi
+done
