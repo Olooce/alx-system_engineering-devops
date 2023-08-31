@@ -1,2 +1,2 @@
 #!/bin/bash
-C_dir=$(pwd), echo "$C_dir"
+pwd
