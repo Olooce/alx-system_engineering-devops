@@ -1,3 +1,2 @@
 #!/bin/bash
-dir=$(dirname "$PWD")  for file in *.html; do if [ ! -e "$dir/$file" ] | [ "$file" -nt "$dir/$file" ]; then  cp "$file" "$dir" fi done
-													     
+find . -maxdepth 1 -name '*.html' -exec cp -u -t .. {} +
